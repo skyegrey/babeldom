@@ -12,6 +12,17 @@
         padding: 50px;
         background-color: #FFF;
     }
+
+    .letter {
+        padding: 10px;
+        margin: 10px;
+        background-color: #FFDE00;
+        color: #333;
+        display: inline-block;
+        font-family: monospace;
+        font-size: 32px;
+        text-align: center;
+    }
 </style>
 <body>
     <div id="container"></div>
@@ -21,7 +32,7 @@
         class Letter extends React.Component {
             render() {
                 return(
-                    <div>
+                    <div className="letter">
                         {this.props.children}
                     </div>
                 )
