@@ -24,7 +24,7 @@
 
         class Letter extends React.Component {
             render() {
-                const letterStyle = {
+                let letterStyle = {
                     padding: 10,
                     margin: 10,
                     backgroundColor: "#FFDE00",
@@ -36,7 +36,7 @@
                 };
 
                 return(
-                    <div>
+                    <div style={letterStyle}>
                         {this.props.children}
                     </div>
                 )
