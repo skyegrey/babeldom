@@ -13,16 +13,9 @@
         background-color: #FFF;
     }
 
-    .letter {
-        padding: 10px;
-        margin: 10px;
-        background-color: #FFDE00;
-        color: #333;
-        display: inline-block;
-        font-family: monospace;
-        font-size: 32px;
-        text-align: center;
-    }
+    /*.letter {*/
+
+    /*}*/
 </style>
 <body>
     <div id="container"></div>
@@ -31,8 +24,19 @@
 
         class Letter extends React.Component {
             render() {
+                const letterStyle = {
+                    padding: 10,
+                    margin: 10,
+                    backgroundColor: "#FFDE00",
+                    color: "#333",
+                    display: "inline-block",
+                    fontFamily: "monospace",
+                    fontSize: 32,
+                    textAlign: "center"
+                };
+
                 return(
-                    <div className="letter">
+                    <div>
                         {this.props.children}
                     </div>
                 )
