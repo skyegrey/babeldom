@@ -20,8 +20,15 @@
 <script type="text/babel">
     class Square extends React.Component {
         render() {
+            const squareStyle = {
+                height: 150,
+                backgroundColor: "#FF6663"
+            }
+
             return (
-                <br />
+                <div style={squareStyle}>
+
+                </div>
             )
         }
     }
@@ -46,7 +53,7 @@
 
             return (
                 <div style={cardStyle}>
-
+                    <Square />
                 </div>
             )
         }
