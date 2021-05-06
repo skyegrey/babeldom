@@ -35,8 +35,17 @@
 
     class Label extends React.Component {
         render() {
+            const labelStyle = {
+                fontFamily: "sans-serif",
+                fontWeight: "bold",
+                padding: 13,
+                margin: 0
+            }
+
             return (
-                <br />
+                <p style={labelStyle}>
+                    #FF6663
+                </p>
             )
         }
     }
@@ -54,6 +63,7 @@
             return (
                 <div style={cardStyle}>
                     <Square />
+                    <Label />
                 </div>
             )
         }
