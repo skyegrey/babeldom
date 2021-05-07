@@ -14,9 +14,17 @@
 
 <script type="text/babel">
     class LightningCounter extends React.Component {
+        constructor(props) {
+            super(props);
+
+            this.state = {
+                strikes: 0,
+            };
+        }
+
         render() {
             return(
-                <h1>Hello!</h1>
+                <h1>{this.state.strikes}</h1>
             )
         }
     }
