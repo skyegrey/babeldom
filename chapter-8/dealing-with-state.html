@@ -35,14 +35,26 @@
         }
 
         render() {
+            const counterStyle={
+                color: "#66FFFF",
+                fontSize: 50,
+            }
+
+            var count = this.state.strikes.toLocaleString();
+
             return(
-                <h1>{this.state.strikes}</h1>
+                <h1 style={counterStyle}>{count}</h1>
             )
         }
     }
 
     class LightningCounterDisplay extends React.Component {
         render () {
+            const commonStyle = {
+                margin: 0,
+                padding: 0,
+            };
+
             const divStyle = {
                 width: 250,
                 textAlign: "center",
@@ -53,9 +65,27 @@
                 borderRadius: 10
             };
 
+            const textStyles = {
+                emphasis: {
+                    fontSize: 38,
+                    ...commonStyle
+                },
+                smallEmphasis: {
+                    ...commonStyle
+                },
+                small: {
+                    fontSize: 17,
+                    opacity: 0.5,
+                    ...commonStyle
+                },
+            };
+
             return (
                 <div style={divStyle}>
                     <LightningCounter />
+                    <h2 style={textStyles.smallEmphasis}>LIGHTNING STRIKES</h2>
+                    <h2 style={textStyles.emphasis}>WORLDWIDE</h2>
+                    <p style={textStyles.small}>(since you loaded this example)</p>
                 </div>
             )
         }
