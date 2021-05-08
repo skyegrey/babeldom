@@ -42,6 +42,14 @@
             this.state = {
                 count: 0,
             }
+
+            this.increase = this.increase.bind(this)
+        }
+
+        increase (e) {
+            this.setState({
+                count: this.state.count + 1
+            })
         }
 
         render () {
@@ -67,7 +75,8 @@
             return (
                 <div style={backgroundStyle}>
                     <Counter display={this.state.count}/>
-                    <button style={buttonStyle}>+</button>
+                    <button onClick={this.increase}
+                            style={buttonStyle}>+</button>
                 </div>
             )
         }
