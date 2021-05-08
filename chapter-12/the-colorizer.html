@@ -8,6 +8,12 @@
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
     <style>
+        #colorHeading {
+            padding: 0;
+            margin: 50px 50px -20px;
+            font-family: sans-serif;
+        }
+
         #container{
             padding: 50px;
             background-color: #FFF
@@ -43,8 +49,21 @@
     </style>
 </head>
 <body>
+<h1 id="colorHeading">Colorizer</h1>
+
 <div id="container"></div>
 <script type="text/babel">
+    const heading = document.querySelector("#colorHeading")
+
+    class ColorLabel extends React.Component {
+        render () {
+            return ReactDOM.createPortal(
+                ": " + this.props.color,
+                heading
+            )
+        }
+    }
+
     class Colorizer extends React.Component {
         constructor(props) {
             super(props);
@@ -92,6 +111,7 @@
                         />
                         <button type="submit">go</button>
                     </form>
+                    <ColorLabel color={this.state.bgColor} />
                 </div>
             )
         }
