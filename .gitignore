@@ -1,2 +1,4 @@
 .idea/
-*/node_modules
+*/node_modules/
+chapter-15/todolist/node_modules
+chapter-14/ipaddress/node_modules
