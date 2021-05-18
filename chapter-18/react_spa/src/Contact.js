@@ -5,8 +5,8 @@ class Contact extends Component {
         return(
             <div>
                 <h2>Got Questions?</h2>
-                <p>Too bad, I don't have a great website, but here it is
-                <a href={"skyegrey.dev"}>skyegrey.dev</a></p>
+                <p>Too bad, I don't have a great website, but here it
+                    is <a href={"https://skyegrey.dev"}>skyegrey.dev</a></p>
             </div>
         )
     }
