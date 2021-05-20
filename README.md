@@ -1,5 +1,6 @@
 # babeldom
 Repo for personal learning with ReactJS
+Based on the book Learning React A Hands-On Guide to Building Web Applications Using React and Redux
 
 
 ### Chapter 2 
