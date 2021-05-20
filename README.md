@@ -31,3 +31,23 @@ Switched to building using npm and actually having deployment ready code
 
 ### Chapter 14
 Use of data gathering and display on UI. Also has some minor API usage. First interaction of live data and displaying it. 
+
+### Chapter 15
+Created a simple todo list that ties together everything learned so far. I've referenced this project like 20 times already
+
+### Chapter 16
+Built a sliding menu in react 
+
+### Chapter 17
+Avoided Unnecessary Renders
+
+### Chapter 18
+Used react router to create an SPA
+
+### Chapter 19
+Baby steps with Redux and core concepts
+
+### Chapter 20
+Full useage of Redux with react
+
+And with that, the book is finished! 
